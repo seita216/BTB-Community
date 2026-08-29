@@ -1,0 +1,25 @@
+{
+  "name": "btb-community",
+  "description": "BTB Game Community Platform",
+  "repository": "https://github.com/seita216/BTB-Community",
+  "keywords": ["btb", "game", "community", "scratch", "chatroom"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "PORT": {
+      "description": "Server port",
+      "value": "5000"
+    },
+    "SCRATCH_API_BASE": {
+      "description": "Scratch API Base URL",
+      "value": "https://api.scratch.mit.edu"
+    },
+    "ADMINS": {
+      "description": "Admin usernames (comma-separated)",
+      "value": "Seita-2015-0216,hikinikuunnma"
+    }
+  }
+}
